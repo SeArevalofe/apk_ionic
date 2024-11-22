@@ -1,0 +1,33 @@
+<ion-app>
+
+ 
+  
+  
+
+  <!-- Contenido principal -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+  <ion-content>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/subir']" tab="tab1">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Subir libro</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/main']" tab="tab2">
+          <ion-icon name="arrow-up-circle-outline"></ion-icon>
+          <ion-label>biblioteca</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button [routerLink]="['/prueba']" tab="tab3">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>registrarse</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    
+  </ion-content>
+
+
+</ion-app>
+

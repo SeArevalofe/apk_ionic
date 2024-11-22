@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button class="back" [routerLink]="['/']">Volver</ion-button>
+    <ion-title>subir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image" [fullscreen]="true">
+
+  
+  <form (ngSubmit)="submitBook()" #bookForm="ngForm">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" class="color-white">Título</ion-label>
+        <ion-input
+          type="text"
+          [(ngModel)]="book.title"
+          name="title"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" class="color-white">Autor</ion-label>
+        <ion-input
+          type="text"
+          [(ngModel)]="book.author"
+          name="author"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" class="color-white">Sinopsis</ion-label>
+        <ion-textarea
+          [(ngModel)]="book.synopsis"
+          name="synopsis"
+          required
+        ></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" class="color-white">Portada</ion-label>
+        <input
+          type="file"
+          (change)="onFileSelected($event)"
+          required
+        />
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" type="submit" [disabled]="!bookForm.valid">
+      Subir Libro
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,92 @@
+.background-image {
+  --background: url('/assets/img/fondos/fondo4.jfif') no-repeat center center / cover;
+  height: 100%;
+  width: 100%;
+}
+
+ion-toolbar {
+  --background: transparent;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  background-color: black; 
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.custom-file-label:hover {
+  background-color: gray; /* Color al pasar el mouse */
+}
+
+.archivo {
+  display: flex;
+  justify-content: center;
+}
+
+ion-item {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+ion-input {
+  --background: transparent;
+  --color: white;
+}
+
+ion-list {
+  --ion-background-color: transparent;
+}
+
+.agregar {
+  margin-left: 34%;
+  margin-top: 30px;
+  border-radius: 5px;
+  --background: transparent;
+  --border-color: black;
+  --color: white;
+}
+
+.date {
+  max-width: 100px;
+}
+
+.back {
+  --background: transparent;
+}
+
+textarea {
+  background-color: transparent;
+  margin-top: 10px;
+  color: white;
+}
+
+label {
+  color: white; /* Aquí se asegura que las etiquetas (labels) sean blancas */
+}
+
+ion-label {
+  color: white; /* Esto asegura que los labels dentro de ion-item también sean blancos */
+}
+
+ion-textarea {
+  --background: transparent;
+  --color: white;
+}
+
+:root {
+  --ion-color-primary: #fff; /* Esto cambiará el color principal a blanco */
+  --ion-color-medium: #fff;  /* Esto puede cambiar el color de las etiquetas en Ionic */
+  --ion-text-color: #fff;    /* Asegura que el texto sea blanco en toda la app */
+}
+
+label,
+ion-label {
+  color: white !important; /* Añadir !important si es necesario para sobrescribir */
+}

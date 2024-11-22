@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button class="back" [routerLink]="['/']">Volver</ion-button>
+    <ion-title>Prueba</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image" [fullscreen]="true">
+  <!--formulario inicio de sesion-->
+  <form action="registerform">
+    <ion-list>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="email"
+          fill="solid"
+          label="Email"
+          labelPlacement="floating"
+          helperText="Ingrese un correo válido"
+          errorText="Correo inválido"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="password"
+          fill="solid"
+          label="Contraseña"
+          labelPlacement="floating"
+          helperText="Ingrese contraseña"
+          errorText="Contraseña inválida"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      
+      <ion-button [routerLink]="['']"  class="iniciar">Iniciar Sesión</ion-button>
+    </ion-list>
+  </form>
+</ion-content>
+
+
+
+
